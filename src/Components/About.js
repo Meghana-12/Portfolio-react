@@ -17,29 +17,34 @@ const About = ({ data }) => {
   return (
     <section id="about">
       <div className="row">
-        <div className="three columns">
-          <img
-            className="profile-pic"
-            src={profilepic}
-            alt="Sonny's Profile Pic"
-          />
-        </div>
         <div className="nine columns main-col">
           <h2>About Me</h2>
 
-          <p>{bio}</p>
+          <p>
+            Hi Amigos! I'm Meghana Varanasi! Just another soul exploring
+            different technologies with an ultimate goal to help others using
+            tech.Along with my studies, I’ve self taught myself different web
+            dev techs like react, redux and saga, dynamic css, component css and
+            ofc vanilla css and handling apis using axios .{" "}
+          </p>
+          <p>
+            Adding to this I had the opportunity to be part of various events
+            and play different roles. I’ve been a General secretary of cultural
+            affairs last year, I’ve participated in hackathons, I’ve been a
+            mentor, a mentee, core member, lead, a sports person and part of
+            cultural clubs, been part of building few websites for clubs and a
+            gssoc participant. If you think tech dev is the only thing I do,
+            darling, you got me all wrong, I play guitar, make art and more
+            importantly have fun!.{" "}
+          </p>
+          <p>Thanks for stopping by! I hope you have a Wonderful day!</p>
           <div className="row">
             <div className="columns contact-details">
               <h2>Contact Details</h2>
               <p className="address">
                 <span>{name}</span>
                 <br />
-                <span>
-                  {street}
-                  <br />
-                  {city} {state}, {zip}
-                </span>
-                <br />
+                Senior @IIT Bhilai
                 <span>{phone}</span>
                 <br />
                 <span>{email}</span>
@@ -53,6 +58,14 @@ const About = ({ data }) => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="three columns">
+          <img
+            className="profile-pic"
+            src={profilepic}
+            alt="Meghana's Profile Pic"
+            style={{ paddingTop: "25%" }}
+          />
         </div>
       </div>
     </section>
